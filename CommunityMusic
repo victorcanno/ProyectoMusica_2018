@@ -1,0 +1,30 @@
+El nombre de mi proyecto es: CommunityMusic
+
+Aplicación proyecto para bases de datos. 
+
+Una aplicación de Streaming musical con su base de datos basada en lo que quieren escuchar sus usuarios
+
+Innovará en cómo se conforma su base de datos, esta base estará conformada con las canciones que quieren escuchar sus usuarios.
+Si un usuario no encuentra lo que busca podrá hacer una petición para que se añada en la base de datos lo que desea escuchar.
+La base de datos se expandirá con toda música que desean sus usuarios.
+
+¿Cómo añadir una nueva canción, álbum o artista?
+
+Si la busqueda no ha resultado exitosa se le dará al usuario la posibilidad de agregar el contenido que busca.
+Su consulta será transladada a un motor de busqueda el cual mostrará resultados aproximados según su requerimento,
+se selecciona el contenido a agregar y su petición será procesada para añadirla a la base de datos.
+
+Para cada usuario se tendrán los siguientes tipos de datos:
+
+Usuario ----> varchar -> El nombre es la llave primaria, ya que en toda la base de datos cada nombre de usuario debe ser único.
+Contraseña -> ntext ---> Admite caracteres especiales para la contraseña
+Nombre -----> varchar
+Apellido ---> varchar
+Correo -----> varchar
+Celular	----> char ---> El char define una longitud fija, el numero de celular siempre será de igual numero de caracteres para todos.
+
+ntext: Datos Unicode de longitud variable.
+
+char [(n)]: Longitud fija, datos de cadena. n define la longitud de cadena y debe ser un valor entre 1 y 8.000.
+
+varchar [(n)]: Datos de cadena de longitud variable. n define la longitud de cadena y debe ser un valor comprendido entre 1 y 8.000.

@@ -13,19 +13,33 @@ CREATE TABLE Usuarios(
 
 )
 
-CREATE TABLE Canciones( 
-
+CREATE TABLE Canciones ( 
+    
+    idalbum int FOREIGN KEY,
+    Nombre varchar NOT NULL,
+    Cantante varchar NOT NULL,
+    Album varchar NOT NULL,
+    Año date DEFAULT,
+    Valoracion char NOT NULL
 
 )
 
-CREATE TABLE Albumnes (  
-
-
+CREATE TABLE Albumes (  
+        
+    idalbum int PRIMARY KEY,
+    idcantante int FOREIGN KEY,
+    Nombre varchar NOT NULL,
+    Cantante varchar NOT NULL,
+    Album varchar NOT NULL,
+    Año date DEFAULT,
+    Valoracion char NOT NULL
 
 )
 
 CREATE TABLE Artistas (
-
-
+    
+    idcantante int PRIMARY KEY,
+    Nombre varchar NOT NULL,
+    Valoracion char NOT NULL
 
 )

@@ -1,0 +1,31 @@
+CREATE DATABASE CommunityMusic
+
+USE CommunityMusic
+
+CREATE TABLE Usuarios( 
+
+    Usuario varchar PRIMARY KEY,
+    Contraseña ntext NOT NULL,
+    Nombre varchar NOT NULL,
+    Apellido varchar NOT NULL,
+    Correo varchar NOT NULL UNIQUE,
+    Celular char NOT NULL 
+
+)
+
+CREATE TABLE Canciones( 
+
+
+)
+
+CREATE TABLE Albumnes (  
+
+
+
+)
+
+CREATE TABLE Artistas (
+
+
+
+)

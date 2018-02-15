@@ -5,7 +5,7 @@ USE CommunityMusic
 CREATE TABLE Usuarios( 
 
     Usuario varchar(15) PRIMARY KEY,
-    Contraseña ntext NOT NULL,
+    Contraseña varchar(20) NOT NULL,
     Nombre varchar(20) NOT NULL,
     Apellido varchar(20) NOT NULL,
     Correo varchar(100) NOT NULL UNIQUE,

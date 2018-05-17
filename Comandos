@@ -1,0 +1,47 @@
+CREATE DATABASE CommunityMusic
+
+USE CommunityMusic
+
+CREATE TABLE Usuarios( 
+
+    Usuario varchar(15) PRIMARY KEY,
+    Contraseña varchar(20) NOT NULL,
+    Nombre varchar(20) NOT NULL,
+    Apellido varchar(20) NOT NULL,
+    Correo varchar(100) NOT NULL UNIQUE,
+    Celular char(10) NOT NULL 
+
+)
+
+CREATE TABLE Canciones ( 
+    
+    idalbum int FOREIGN KEY,
+    Nombre varchar(20) NOT NULL,
+    Cantante varchar(20) NOT NULL,
+    Album varchar(20) NOT NULL,
+    Año date DEFAULT,
+    link varchar(100) NOT NULL UNIQUE,
+    Valoracion byte NOT NULL
+
+)
+
+CREATE TABLE Albumes (  
+        
+    idalbum int PRIMARY KEY,
+    idcantante int FOREIGN KEY,
+    Nombre varchar(20) NOT NULL,
+    Cantante varchar(20) NOT NULL,
+    Album varchar NOT NULL,
+    Año date DEFAULT,
+    Valoracion byte NOT NULL
+
+)
+
+CREATE TABLE Artistas (
+    
+    idcantante int PRIMARY KEY,
+    Nombre varchar(20) NOT NULL,
+    Grupo varchar(20),
+    Valoracion byte NOT NULL
+
+)
